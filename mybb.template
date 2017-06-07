@@ -21,6 +21,7 @@
       "Type" : "String",
       "MinLength": "1",
       "MaxLength": "64",
+      "Default" : "170606-2046",
       "AllowedPattern" : "[-_ a-zA-Z0-9]*",
       "ConstraintDescription" : "can contain only alphanumeric characters, spaces, dashes and underscores."
     },
@@ -59,7 +60,7 @@
     "OperatorEmail" : {
       "Description" : "Email address to notify if there are any operational issues",
       "Type" : "String",
-      "Default" : "hello@rohit.io"
+      "Default" : "awscross@mt2015.com"
     },
     "SSHLocation" : {
       "Description" : "SSH whitelisting CIDR block (default can be accessed from anywhere)",
@@ -347,14 +348,14 @@
 "                                                                                                                                                            \n",
 "# Configure the MyBB application.. - TODO                                                                                                                   \n",
 "cd /usr/src/                                                                                                                                                \n",
-"git clone https://github.com/rohit01/crossover.git                                                                                                          \n",
-"cd crossover/                                                                                                                                               \n",
+"git clone https://github.com/ocama/lab.git                                                                                                                  \n",
+"cd lab/                                                                                                                                               \n",
 "bash ./install_mybb.sh ", { "Ref" : "DBName" }, " ", { "Ref" : "MyBbTablePrefix" }, " ", { "Fn::GetAtt" : ["DB", "Endpoint.Address"] }, " ", 
 { "Ref" : "DBUser" }," ", { "Ref" : "DBPassword" }, " ", { "Fn::GetAtt" : [ "PublicElasticLoadBalancer", "DNSName" ] }, "                                          \n",
 "rm /var/www/html/index.html                                                                                                                                 \n",
 "cp -r mybb/* /var/www/html/                                                                                                                                 \n",
 "cd /usr/src/                                                                                                                                                \n",
-"rm -rf crossover/                                                                                                                                            \n",
+"rm -rf lab/                                                                                                                                            \n",
 "                                                                                                                                                            \n",
 "# All is well so signal success                                                                                                                             \n",
 "cfn-signal -e 0 -r \"MyBB setup complete\"                                                                                                                  \n",
