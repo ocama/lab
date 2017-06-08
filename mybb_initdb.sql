@@ -1637,7 +1637,7 @@ CREATE TABLE `mybb_users` (
 
 LOCK TABLES `mybb_users` WRITE;
 /*!40000 ALTER TABLE `mybb_users` DISABLE KEYS */;
-INSERT INTO `mybb_users` VALUES (1,'admin','cb883bc225650cd596f905939e75f299','nCQsSE07','NBj6HKVZs827jvuZGuMo7Q9V5fmHNrA9VlcKnUG5RNBiWb7G20','awscross@mt2015.com',0,0,'','','0',4,'',0,'',1448377068,1448377068,1448377068,0,'','','','','','','','all','',1,0,0,0,1,0,1,1,1,0,'',1,1,1,1,1,1,0,0,0,'','','0',0,0,'','',0,0,0,'','','','',0,0,0,'À¨!','','',0,1,0,0,0,0,0,0,0,0,0,0,0,1,'',0);
+INSERT INTO `mybb_users` VALUES (1,'admin','123456','nCQsSE07','NBj6HKVZs827jvuZGuMo7Q9V5fmHNrA9VlcKnUG5RNBiWb7G20','ocama12@gmail.com',0,0,'','','0',4,'',0,'',1448377068,1448377068,1448377068,0,'','','','','','','','all','',1,0,0,0,1,0,1,1,1,0,'',1,1,1,1,1,1,0,0,0,'','','0',0,0,'','',0,0,0,'','','','',0,0,0,'À¨!','','',0,1,0,0,0,0,0,0,0,0,0,0,0,1,'',0);
 /*!40000 ALTER TABLE `mybb_users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
